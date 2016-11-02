@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : stringStream.cpp
+// Name        : OverloadingConstructor.cpp
 // Author      : inchan
 // Version     :
 // Copyright   : Your copyright notice
@@ -7,28 +7,14 @@
 //============================================================================
 
 #include <iostream>
-#include <sstream>
+#include "Person.h"
 using namespace std;
 
 int main() {
-	string name = "Bob";
+	Person person1;
+	Person person2("Bob", 42);
 
-	int age = 32;
-
-	stringstream ss;
-
-	ss << "Name is : ";
-	ss << name;
-	ss << "Age is: ";
-	ss << age;
-
-
-	string info = ss.str();
-
-	cout << info << endl;
-	//string info = "Name * " + name + "; age" + age;
-
-	//cout << info << endl;
-
+	cout << person1.toString() << endl;
+    cout << person2.toString() << endl;
 	return 0;
 }

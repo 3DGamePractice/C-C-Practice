@@ -9,18 +9,6 @@
 
 namespace std {
 
-Person::Person() {
-	// TODO Auto-generated constructor stub
-	name = "undefined";
-	age = 0;
-}
-
-Person::Person(string newName, int newAge){
-	this->name = newName;
-	this->age = newAge;
-
-	//cout << "memory location object " <<  << endl;
-};
 
 string Person::toString(){
 	stringstream ss;

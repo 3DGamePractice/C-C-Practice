@@ -17,11 +17,11 @@ private:
 		int age;
 
 public:
-	Person();
+	Person(): name("unnamed"), age(0){};
 
 	//Person(string name, int age);
 	Person(string newName){name = newName; age = 0;};
-	Person(string newName, int newAge);
+	Person(string newName, int newAge): name(newName), age(newAge){};
 	string toString();
 };
 
